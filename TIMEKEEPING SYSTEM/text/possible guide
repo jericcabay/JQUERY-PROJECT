@@ -1,0 +1,10 @@
+step 1: Go to Folder C:\php-0.0.20
+step 2: Copy and paste php.ini-development
+step 3: Rename php.ini-development ➡️ php.ini
+step 4: Open php.ini
+step 5: Uncomment extension=mysqli
+                  extension=pdo_mysql
+                  extension_dir = "ext"
+step 6: change path to extension_dir = "C:\php-8.4.2\ext"
+step 7: run in terminal php -S localhost:8000
+step 8: http://localhost:8000/sample.html

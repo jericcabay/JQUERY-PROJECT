@@ -1,0 +1,117 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    height: 70px;
+    border: 1px solid #e7e7e7;
+    background-color: #4b4444;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    float: left;
+}
+
+a {
+    text-decoration: none;
+    text-align: center;
+}
+
+li a {
+    display: block;
+    color: #010000;
+    text-align: center;
+    padding: 14px 16px;
+    font-size: 25px;
+}
+
+
+/* Create a Hamburger Navigation */
+#humberger {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    z-index: 1001;
+  }
+  
+  #humberger div {
+    height: 4px;
+    background-color: #333;
+    border-radius: 2px;
+  }
+
+  .sidebar.show {
+    width: 250px;
+  }
+
+  div h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 20px;
+  }
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+/* ///////////////////////// */
+
+/* Design inside the buger nav*/
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  }
+
+  /* ///////////////////////// */
