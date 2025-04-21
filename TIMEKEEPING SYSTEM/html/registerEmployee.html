@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../assets/css/registerEmployee.css">
+    <title>Register New Employee</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Employee Register</h1>
+        <div class="info">
+            <div class="personalInfo">
+                <h2>Personal Information</h2>
+                <form id="RegisterInfo">
+                    <div class="fullname">
+                        <div class="name-group">
+                            <label>First Name</label>
+                            <input type="text" class="fname" id="fname" name="firstname" placeholder="First Name">
+                        </div>
+
+                        <div class="name-group">                            
+                            <label>Middle Name</label>
+                            <input type="text" class="mname" id="mname" name="middlename" placeholder="Middle Name">
+                        </div>
+                        
+                        <div class="name-group">
+                            <label>Last Name</label>
+                            <input type="text" class="lname" id="lname" name="lastname" placeholder="Last Name">
+                        </div>
+                    </div><br>
+
+                    <div class="currentAge">
+                        <div class="age-group">
+                            <label>Birth Date</label>
+                            <input type="date" class="bdate" id="bdate" name="birthdate">
+                        </div>
+
+                        <div class="age-group">
+                            <label>Age</label>
+                            <input type="number" class="age" id="age" name="age">
+                    
+                        </div>
+                    </div><br>
+
+                    <label>Gender</label><br>
+                    <input type="text" class="gender" id="gender" name="gender"><br><br>
+        
+                    <label>Email</label><br>
+                    <input type="email" class="email" id="email" name="email" placeholder="Email"><br><br>
+
+                    <label>Mobile Number</label><br>
+                    <input type="tel" class="mnumber" id="mnumber" name="mnumber" placeholder="Mobile Number"><br><br>
+
+                    <button type="submit">Register Information</button>
+                </form>
+
+                <p id="responseMsg" style="margin-top:1rem;color:green;"></p>
+            </div>
+
+            <div class="employeeInfo">
+                <h2>Employee Information</h2>
+                <form>
+                    <label>Search</label><br>
+                    <input type="text" class="search" id="search" name="search" placeholder="Search The name"><br><br>
+                    <div id="searchResult"></div>
+            
+                    <label>Employee ID</label><br>
+                    <input type="text" class="employeeId" id="employeeID" name="EmployeeId"><br><br>
+
+                    <label>Position Employee</label><br>
+                    <select>
+                        <option>Default</option>
+                    </select><br><br>
+                
+                    <label>Position Employee</label><br>
+                    <select>
+                        <option>Provisional Employee</option>
+                        <option>Regular Employee</option>
+                    </select><br><br>
+
+                    <label>Date Start</label><br>
+                    <input type="date" class="startdate" id="startDate" name="dateStart"><br><br>
+                
+                    <button type="submit">Register Employee</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/ageCalculator.js"></script>
+    <script src="../assets/js/RegisterInfo.js"></script>
+    <script src="../assets/js/searchEmployeeName.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f5f9;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 32px;
+    color: #333;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+.personalInfo, .employeeInfo {
+    background-color: #fff;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    max-width: 550px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+input, select {
+    width: 100%;
+    padding: 5px 5px;
+    margin-top: 6px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #f8fafc;
+    transition: 0.3s ease;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    background-color: #fff;
+}
+
+.fullname {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.name-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.currentAge {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.age-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    margin-top: 25px;
+    padding: 12px;
+    width: 100%;
+    background-color: #3b82f6;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2563eb;
+}

@@ -7,28 +7,35 @@
   <title>Document</title>
 </head>
 <body>
-
-  <div class="row">
+<div class="container">
     <div id="idCard">
-      <div class="photo-container">
-        <img src="../image/jeric.webp" alt="Employee Photo" />
-        <p id="employeeId">Employee Id:</p>
-      </div>
-      <div class="info-container">
-        <h3>Company Name</h3>
-        <p id="fullname">Full Name: </p>
-        <p id="position">Position:</p>
-        <p id="email">Email:</p>
+        <div class="photo-container">
+            <img src="../image/jeric.webp" alt="Employee Photo" />
+            <p class="employeeId1" id="employeeId">Employee Id:</p>
+        </div>
+      
+        <div class="info-container">
+            <h3>Company Name</h3>
+            <p id="fullname">Full Name: </p>
+            <p id="position">Position:</p>
+            <p id="email">Email:</p>
         <p id="m-number">Mobile Number: </p>
-      </div>
     </div>
-      <input type="text"class="row-search" id="employee-search" placeholder="Search employee..." />
-  </div>
+    
+    </div>
+        <input type="text"class="row-search" id="employee-search" placeholder="Search employee..." />
+    </div>
 
-  <div class="employeeView">
-    <p>Employee List</p>
-    <div id="EmployeeList"></div>
-  </div>
+    <div class="bottom-section">
+        <div class="employeeView">
+            <h4>Employee List</h4>
+            <div id="EmployeeList"></div>
+        </div>
 
+        <div class="employeeAttendance">
+            <h4>Employee Attendance</h4>
+        <div id="EmployeeList"></div>
+    </div>
+</div>
 </body>
 </html>
